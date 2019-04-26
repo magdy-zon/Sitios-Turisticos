@@ -11,8 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('home', 'SiteController@index');
+Route::get('/', 'SiteController@index');
+Route::resource('estado', 'EstadoController');

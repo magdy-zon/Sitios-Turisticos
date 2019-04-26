@@ -1,0 +1,15 @@
+.home-container {
+    height: 100vh;
+}
+.font-container{
+  width: 55%;
+  padding: 30vh 6vw 20vh;
+  position: absolute;
+}
+.font-home {
+  font-size: 7rem;
+}
+.img-container {
+  float: right;
+  padding: 30vh 6vw 20vh;
+}
