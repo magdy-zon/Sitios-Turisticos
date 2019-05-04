@@ -1,0 +1,142 @@
+
+/* Keyframes for fade in from right  */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Keyframes for fade in from left  */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(100%, 0, 0);;
+    transform: translate3d(100%, 0, 0);;
+  }
+}
+
+/* Keyframes for fade in from down  */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Keyframes for fade in from down  */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Classes needed for effects */
+.from-right {
+  -webkit-animation: fadeInRight 1.5s 0s;
+   -moz-animation: fadeInRight 1.5s 0s;
+    -ms-animation: fadeInRight 1.5s 0s;
+     -o-animation: fadeInRight 1.5s 0s;
+        animation: fadeInRight 1.5s 0s;
+}
+.from-left {
+  -webkit-animation: fadeInLeft 1.5s 0s;
+   -moz-animation: fadeInLeft 1.5s 0s;
+    -ms-animation: fadeInLeft 1.5s 0s;
+     -o-animation: fadeInLeft 1.5s 0s;
+        animation: fadeInLeft 1.5s 0s;
+}
+.from-down {
+  -webkit-animation: fadeInDown 1.5s 0s;
+   -moz-animation: fadeInDown 1.5s 0s;
+    -ms-animation: fadeInDown 1.5s 0s;
+     -o-animation: fadeInDown 1.5s 0s;
+        animation: fadeInDown 1.5s 0s;
+}
+.from-up {
+  -webkit-animation: fadeInUp 1.5s 0s;
+   -moz-animation: fadeInUp 1.5s 0s;
+    -ms-animation: fadeInUp 1.5s 0s;
+     -o-animation: fadeInUp 1.5s 0s;
+        animation: fadeInUp 1.5s 0s;
+}

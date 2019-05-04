@@ -86,4 +86,10 @@ class EstadoController extends Controller
     {
         //
     }
+
+    public function consulta(Request $request) {
+        $estado = Estado::where('nombre_id', $request->estado)->first();
+        $lugarturistico = $estado->sitiosvacacionales;
+        return view('explora', compact('lugarturistico'));
+    }
 }

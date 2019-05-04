@@ -10,4 +10,8 @@ class SiteController extends Controller
     public function index() {
         return view('home');
     }
+
+    public function explora() {
+        return view('explora');
+    }
 }

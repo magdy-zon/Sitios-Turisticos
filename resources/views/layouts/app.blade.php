@@ -14,7 +14,6 @@
 
 	<body>
 		@include('layouts.includes.header')
-
 		<main>
 			@yield('content')
 		</main>
@@ -23,4 +22,7 @@
     @include('layouts.includes.footer_includes')
     @yield('after_includes')
 	</body>
+	<script type="text/javascript">
+		M.AutoInit();
+	</script>
 </html>

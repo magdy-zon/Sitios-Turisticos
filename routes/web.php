@@ -12,4 +12,6 @@
 */
 
 Route::get('/', 'SiteController@index');
+Route::get('explora', 'SiteController@explora');
+Route::post('estados/buscar', 'EstadoController@consulta');
 Route::resource('estado', 'EstadoController');

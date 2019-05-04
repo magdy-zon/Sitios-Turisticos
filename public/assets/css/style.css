@@ -1,9 +1,10 @@
+/* Home section */
 .home-container {
     height: 100vh;
 }
 .font-container{
   width: 55%;
-  padding: 30vh 6vw 20vh;
+  padding: 40vh 6vw 20vh;
   position: absolute;
 }
 .font-home {
@@ -11,5 +12,60 @@
 }
 .img-container {
   float: right;
-  padding: 30vh 6vw 20vh;
+  padding: 20vh 6vw 20vh;
+  width: 100%;
+}
+.img-container img {
+  width: 80%;
+  float: right;
+}
+nav .nav-wrapper {
+  padding-top: 5%;
+}
+nav .nav-wrapper a {
+  margin-left: 8%;
+}
+nav .nav-wrapper ul {
+  margin-right: 15%;
+}
+.title-text {
+  font-size: 3rem;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: AntaroFont;
+    src: url('/fonts/Antaro.ttf');
+}
+@font-face {
+    font-family: CovesFont;
+    src: url('/fonts/Coves_Light.otf');
+}
+@font-face {
+    font-family: CovesBoldFont;
+    src: url('/fonts/Coves_Bold.otf');
+}
+@font-face {
+    font-family: LincolnFont;
+    src: url('/fonts/Lincoln.otf');
+}
+@font-face {
+    font-family: ModernFont;
+    src: url('/fonts/ModernSans_Light.otf');
+}
+.antaro {
+  font-family: AntaroFont;
+}
+.coves-light {
+  font-family: CovesFont;
+}
+.coves-bold {
+  font-family: CovesBoldFont;
+}
+.lincoln {
+  font-family: LincolnFont;
+}
+.modern-sans {
+  font-family: ModernFont;
 }

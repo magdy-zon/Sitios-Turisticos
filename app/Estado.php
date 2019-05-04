@@ -13,4 +13,9 @@ class Estado extends Model
       'nombre',
       'capital',
     ];
+
+    public function sitiosvacacionales() {
+        return $this->hasMany('App\SitioVacacional', 'estado_id', 'estado_id');
+    }
+
 }
