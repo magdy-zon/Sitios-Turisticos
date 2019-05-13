@@ -15,10 +15,8 @@ class EstadoController extends Controller
     public function index()
     {
         //
-        $name = 'Alexis';
-        $estados = Estado::all();
 
-        return view('home', compact('estados', 'name'));
+        // return view('home', compact('estados', 'name'));
     }
 
     /**
@@ -90,6 +88,7 @@ class EstadoController extends Controller
     public function consulta(Request $request) {
         $estado = Estado::where('nombre_id', $request->estado)->first();
         $lugarturistico = $estado->sitiosvacacionales;
+        // dd($lugarturistico);
         return view('explora', compact('lugarturistico'));
     }
 }

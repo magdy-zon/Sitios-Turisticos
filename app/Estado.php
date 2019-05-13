@@ -11,7 +11,7 @@ class Estado extends Model
     protected $table = 'estados';
     protected $fillable = [
       'nombre',
-      'capital',
+      'capital'
     ];
 
     public function sitiosvacacionales() {

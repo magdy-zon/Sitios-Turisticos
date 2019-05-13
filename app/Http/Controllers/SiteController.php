@@ -12,6 +12,8 @@ class SiteController extends Controller
     }
 
     public function explora() {
-        return view('explora');
+
+        $lugarturistico = [];
+        return view('explora', compact('lugarturistico'));
     }
 }
