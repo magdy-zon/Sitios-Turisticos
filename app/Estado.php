@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Estado extends Model
 {
     //
-    public $timestamps = false;
-    protected $table = 'estados';
-    protected $fillable = [
+    protected $table      = 'estados';
+    protected $primaryKey = 'estado_id'; //Por defecto id
+    protected $fillable   = [
       'nombre',
       'capital'
     ];

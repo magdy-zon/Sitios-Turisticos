@@ -4,7 +4,6 @@
   <div class="had-container">
     <div class="row"><br><br>
           <h5 class="color-white center-align">Primer paso</h5>
-          <!-- <span class="color-white font-home lincoln">A dónde nos vamos?</span> -->
           <div class="col s12">
             {{ Form::open(array('url' => 'estados/buscar', 'method' => 'post')) }}
             <div class="col s3">
@@ -18,10 +17,8 @@
               </select>
               <label>Estado</label>
               <button type="submit" name="submit" class="waves-effect waves-light btn">Consultar</button>
-
             </div>
             <div class="col s3">
-
             </div>
 
             {{ Form::close() }}

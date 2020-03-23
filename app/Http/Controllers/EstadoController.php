@@ -15,8 +15,9 @@ class EstadoController extends Controller
     public function index()
     {
         //
-
-        // return view('home', compact('estados', 'name'));
+        $estados = Estado::all();
+        // dd($estados);
+        return view('estados.index', compact('estados'));
     }
 
     /**
@@ -26,7 +27,7 @@ class EstadoController extends Controller
      */
     public function create()
     {
-        //
+        return view('estados.create');
     }
 
     /**
@@ -37,7 +38,9 @@ class EstadoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->except('_token'));
+        $estado = Estado::create($request->except('_token'));
+        return redirect('estado');
     }
 
     /**
@@ -48,7 +51,8 @@ class EstadoController extends Controller
      */
     public function show(Estado $estado)
     {
-        //
+        // dd($estado);
+        return view('estados.show', compact('estado'));
     }
 
     /**
@@ -59,7 +63,8 @@ class EstadoController extends Controller
      */
     public function edit(Estado $estado)
     {
-        //
+        // dd($estado);
+        return view('estados.edit', compact('estado'));
     }
 
     /**
@@ -71,7 +76,12 @@ class EstadoController extends Controller
      */
     public function update(Request $request, Estado $estado)
     {
-        //
+        // dd($request->all(), $estado);
+        $estado->update([
+            'nombre'  => $request->nombre,
+            'capital' => $request->capital
+        ]);
+        return view('estados.show', compact('estado'));
     }
 
     /**
@@ -82,7 +92,8 @@ class EstadoController extends Controller
      */
     public function destroy(Estado $estado)
     {
-        //
+        $estado->delete();
+        return redirect('estado');
     }
 
     public function consulta(Request $request) {
